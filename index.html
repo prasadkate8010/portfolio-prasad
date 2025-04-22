@@ -4,141 +4,162 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Prasad | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
-  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
   <style>
-	body {
-  margin: 0;
-  font-family: 'Orbitron', sans-serif;
-  background: #0d1117;
-  color: #c9d1d9;
-}
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
 
-header {
-  height: 100vh;
-  background: linear-gradient(to right, #141e30, #243b55);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
+    body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background: #0d1117;
+      color: #c9d1d9;
+    }
 
-.glow {
-  color: #00ffe5;
-  text-shadow: 0 0 10px #00ffe5, 0 0 20px #00ffe5;
-}
+    header {
+      height: 100vh;
+      background: linear-gradient(to right, #141e30, #243b55);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      flex-direction: column;
+      padding: 20px;
+    }
 
-.btn {
-  margin-top: 20px;
-  padding: 10px 20px;
-  background: #00ffe5;
-  color: #000;
-  border-radius: 25px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: 0.3s;
-}
+    .glow {
+      font-size: 3rem;
+      background: linear-gradient(to right, #00ffe5, #00c0ff, #0ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 800;
+    }
 
-.btn:hover {
-  background: #00c0aa;
-}
+    .btn {
+      margin-top: 20px;
+      padding: 12px 30px;
+      background: #00ffe5;
+      color: #000;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+      box-shadow: 0 0 8px #00ffe5;
+    }
 
-section {
-  padding: 60px 20px;
-  max-width: 900px;
-  margin: auto;
-  text-align: center;
-}
+    .btn:hover {
+      background: #00c0aa;
+      box-shadow: 0 0 15px #00ffe5, 0 0 25px #00ffe5;
+    }
 
-.projects {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-}
+    section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+    }
 
-.card {
-  background: #161b22;
-  padding: 20px;
-  border-radius: 12px;
-  width: 260px;
-  box-shadow: 0 0 10px #000;
-  transition: transform 0.3s ease;
-}
+    .projects {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
 
-.card:hover {
-  transform: translateY(-5px);
-}
+    .card {
+      background: #161b22;
+      padding: 20px;
+      border-radius: 12px;
+      width: 260px;
+      box-shadow: 0 0 15px #000;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border: 1px solid #00ffe540;
+    }
 
-.skills {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  justify-content: center;
-}
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 20px #00ffe5aa;
+    }
 
-.skills li {
-  background: #21262d;
-  padding: 10px 20px;
-  border-radius: 15px;
-}
+    .skills {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+      padding: 0;
+    }
 
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  max-width: 500px;
-  margin: auto;
-}
+    .skills li {
+      background: #21262d;
+      padding: 10px 20px;
+      border-radius: 15px;
+    }
 
-form input,
-form textarea {
-  padding: 10px;
-  border: none;
-  border-radius: 8px;
-  background: #21262d;
-  color: #fff;
-}
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      max-width: 500px;
+      margin: auto;
+    }
 
-form button {
-  padding: 10px;
-  border: none;
-  background: #00ffe5;
-  color: #000;
-  font-weight: bold;
-  border-radius: 8px;
-  cursor: pointer;
-}
+    form input,
+    form textarea {
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      background: #21262d;
+      color: #fff;
+    }
 
-footer {
-  text-align: center;
-  padding: 20px;
-  background: #0d1117;
-  font-size: 14px;
-  color: #8b949e;
-}
+    form button {
+      padding: 12px;
+      border: none;
+      background: #00ffe5;
+      color: #000;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
 
+    form button:hover {
+      background: #00c0aa;
+      box-shadow: 0 0 10px #00ffe5;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #0d1117;
+      font-size: 14px;
+      color: #8b949e;
+    }
   </style>
 </head>
 <body>
+
   <header>
-    <div class="hero-text">
+    <div class="hero-text" data-aos="fade-down">
       <h1>Hi, I'm <span class="glow">Prasad</span></h1>
       <p>Web Developer | Tech Creator | Future Ready</p>
       <a href="#contact" class="btn">Let’s Connect</a>
     </div>
   </header>
 
-  <section id="about">
+  <section id="about" data-aos="fade-up">
     <h2>🚀 About Me</h2>
     <p>
       I'm a 21-year-old tech enthusiast from Buldana. I love building modern websites, custom ERP systems, and useful digital tools that make a real impact. My journey is all about learning, creating, and growing every single day.
     </p>
   </section>
 
-  <section id="skills">
+  <section id="skills" data-aos="fade-up">
     <h2>🛠️ My Skills</h2>
     <ul class="skills">
       <li>Laravel & PHP</li>
@@ -150,7 +171,7 @@ footer {
     </ul>
   </section>
 
-  <section id="contact">
+  <section id="contact" data-aos="fade-up">
     <h2>📬 Contact Me</h2>
     <form>
       <input type="text" placeholder="Your Name" required />
@@ -163,5 +184,12 @@ footer {
   <footer>
     <p>© 2025 Prasad. Built with ❤️ in Buldana.</p>
   </footer>
+
+  <!-- Animate On Scroll -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
 </body>
 </html>
