@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Prasad | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+  
+  <style>
+	body {
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+  background: #0d1117;
+  color: #c9d1d9;
+}
+
+header {
+  height: 100vh;
+  background: linear-gradient(to right, #141e30, #243b55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.glow {
+  color: #00ffe5;
+  text-shadow: 0 0 10px #00ffe5, 0 0 20px #00ffe5;
+}
+
+.btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #00ffe5;
+  color: #000;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #00c0aa;
+}
+
+section {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  background: #161b22;
+  padding: 20px;
+  border-radius: 12px;
+  width: 260px;
+  box-shadow: 0 0 10px #000;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.skills {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.skills li {
+  background: #21262d;
+  padding: 10px 20px;
+  border-radius: 15px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: auto;
+}
+
+form input,
+form textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #21262d;
+  color: #fff;
+}
+
+form button {
+  padding: 10px;
+  border: none;
+  background: #00ffe5;
+  color: #000;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #0d1117;
+  font-size: 14px;
+  color: #8b949e;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="hero-text">
+      <h1>Hi, I'm <span class="glow">Prasad</span></h1>
+      <p>Web Developer | Tech Creator | Future Ready</p>
+      <a href="#contact" class="btn">Let’s Connect</a>
+    </div>
+  </header>
+
+  <section id="about">
+    <h2>🚀 About Me</h2>
+    <p>
+      I'm a 21-year-old tech enthusiast from Buldana. I love building modern websites, custom ERP systems, and useful digital tools that make a real impact. My journey is all about learning, creating, and growing every single day.
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2>🛠️ My Skills</h2>
+    <ul class="skills">
+      <li>Laravel & PHP</li>
+      <li>HTML, CSS, JS</li>
+      <li>MySQL</li>
+      <li>UI/UX Design</li>
+      <li>ERP Development</li>
+      <li>Branding & Web Design</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>📬 Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Prasad. Built with ❤️ in Buldana.</p>
+  </footer>
+</body>
+</html>
