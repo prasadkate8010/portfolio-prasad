@@ -1,195 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="mr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Prasad | Portfolio</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap">
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prasad Milk - शुद्धतेची ग्वाही, स्वादतेची साथ</title>
   <style>
-    * {
-      box-sizing: border-box;
-      scroll-behavior: smooth;
-    }
-
-    body {
-      margin: 0;
-      font-family: 'Orbitron', sans-serif;
-      background: #0d1117;
-      color: #c9d1d9;
-    }
-
-    header {
-      height: 100vh;
-      background: linear-gradient(to right, #141e30, #243b55);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      flex-direction: column;
-      padding: 20px;
-    }
-
-    .glow {
-      font-size: 3rem;
-      background: linear-gradient(to right, #00ffe5, #00c0ff, #0ff);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      font-weight: 800;
-    }
-
-    .btn {
-      margin-top: 20px;
-      padding: 12px 30px;
-      background: #00ffe5;
-      color: #000;
-      border-radius: 30px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: 0.3s;
-      box-shadow: 0 0 8px #00ffe5;
-    }
-
-    .btn:hover {
-      background: #00c0aa;
-      box-shadow: 0 0 15px #00ffe5, 0 0 25px #00ffe5;
-    }
-
-    section {
-      padding: 60px 20px;
-      max-width: 900px;
-      margin: auto;
-      text-align: center;
-    }
-
-    .projects {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      justify-content: center;
-    }
-
-    .card {
-      background: #161b22;
-      padding: 20px;
-      border-radius: 12px;
-      width: 260px;
-      box-shadow: 0 0 15px #000;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      border: 1px solid #00ffe540;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 0 20px #00ffe5aa;
-    }
-
-    .skills {
-      list-style: none;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      justify-content: center;
-      padding: 0;
-    }
-
-    .skills li {
-      background: #21262d;
-      padding: 10px 20px;
-      border-radius: 15px;
-    }
-
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-      max-width: 500px;
-      margin: auto;
-    }
-
-    form input,
-    form textarea {
-      padding: 12px;
-      border: none;
-      border-radius: 8px;
-      background: #21262d;
-      color: #fff;
-    }
-
-    form button {
-      padding: 12px;
-      border: none;
-      background: #00ffe5;
-      color: #000;
-      font-weight: bold;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: 0.3s;
-    }
-
-    form button:hover {
-      background: #00c0aa;
-      box-shadow: 0 0 10px #00ffe5;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #0d1117;
-      font-size: 14px;
-      color: #8b949e;
-    }
+    body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; background: #fffdf7; color: #333; }
+    header { background: linear-gradient(90deg, #ffe066, #f4d35e); padding: 30px 20px; text-align: center; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+    header h1 { margin: 0; font-size: 2.5rem; color: #3e3e3e; }
+    header p { font-size: 1.2rem; color: #5c5c5c; }
+    nav { background: #fff3b0; display: flex; justify-content: center; padding: 12px 0; box-shadow: 0 2px 4px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 1000; }
+    nav a { margin: 0 20px; text-decoration: none; color: #333; font-weight: bold; font-size: 1.1rem; transition: 0.3s ease; }
+    nav a:hover { color: #ff8800; }
+    section { padding: 40px 20px; max-width: 1100px; margin: auto; }
+    h2 { font-size: 2rem; margin-bottom: 20px; color: #444; }
+    .products { display: flex; flex-wrap: wrap; gap: 30px; justify-content: center; }
+    .product { border: 1px solid #ddd; padding: 20px; border-radius: 12px; background: #fff; max-width: 260px; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.05); transition: transform 0.2s ease; }
+    .product:hover { transform: translateY(-5px); }
+    .product img { max-width: 100%; border-radius: 8px; margin-bottom: 10px; }
+    footer { background: #f4d35e; text-align: center; padding: 20px; margin-top: 40px; font-weight: 500; }
+    .contact { background: #fffbea; padding: 30px; border-radius: 10px; text-align: center; box-shadow: 0 2px 6px rgba(0,0,0,0.05); }
+    .coming-soon { text-align: center; font-size: 1.3rem; background: #e0ffcb; color: #267000; padding: 20px; margin-top: 40px; border-radius: 10px; }
   </style>
 </head>
 <body>
-
   <header>
-    <div class="hero-text" data-aos="fade-down">
-      <h1>Hi, I'm <span class="glow">Prasad</span></h1>
-      <p>Web Developer | Tech Creator | Future Ready</p>
-      <a href="#contact" class="btn">Let’s Connect</a>
-    </div>
+    <h1>Prasad Milk</h1>
+    <p>शुद्धतेची ग्वाही, स्वादतेची साथ</p>
   </header>
 
-  <section id="about" data-aos="fade-up">
-    <h2>🚀 About Me</h2>
-    <p>
-      I'm a 21-year-old tech enthusiast from Buldana. I love building modern websites, custom ERP systems, and useful digital tools that make a real impact. My journey is all about learning, creating, and growing every single day.
-    </p>
+  <nav>
+    <a href="#about">आमच्याविषयी</a>
+    <a href="#products">उत्पादने</a>
+    <a href="#contact">संपर्क करा</a>
+  </nav>
+
+  <section id="about">
+    <h2>आमच्याविषयी</h2>
+    <p>Prasad Milk ही शुद्ध आणि ताज्या म्हशीच्या दुधावर आधारित उत्पादने तयार करणारी ब्रँड आहे. आमचं ध्येय आहे ग्राहकांना दर्जेदार आणि आरोग्यदायी दुग्धजन्य उत्पादने पोहचवणं.</p>
   </section>
 
-  <section id="skills" data-aos="fade-up">
-    <h2>🛠️ My Skills</h2>
-    <ul class="skills">
-      <li>Laravel & PHP</li>
-      <li>HTML, CSS, JS</li>
-      <li>MySQL</li>
-      <li>UI/UX Design</li>
-      <li>ERP Development</li>
-      <li>Branding & Web Design</li>
-    </ul>
+  <section id="products">
+    <h2>आमची उत्पादने</h2>
+    <div class="products">
+      <div class="product">
+        <img src="https://via.placeholder.com/200" alt="Buffalo Milk">
+        <h3>ताजं म्हशीचं दूध</h3>
+        <p>Net Wt: 1 लीटर</p>
+        <p>₹70/-</p>
+      </div>
+      <div class="product">
+        <img src="https://via.placeholder.com/200" alt="Dahi">
+        <h3>दही</h3>
+        <p>Net Wt: 500 gm</p>
+        <p>₹50/-</p>
+      </div>
+      <div class="product">
+        <img src="https://via.placeholder.com/200" alt="Ghee">
+        <h3>तूप</h3>
+        <p>Net Wt: 200 gm</p>
+        <p>₹180/-</p>
+      </div>
+    </div>
+    <div class="coming-soon">
+      लवकरच तुमच्या सेवेत: पनीर, श्रीखंड, लस्सी, बासुंदी आणि बरेच काही...
+    </div>
   </section>
 
-  <section id="contact" data-aos="fade-up">
-    <h2>📬 Contact Me</h2>
-    <form>
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
+  <section id="contact">
+    <h2>संपर्क करा</h2>
+    <div class="contact">
+      <p><strong>मोबाईल:</strong> 8010241635</p>
+      <p><strong>Instagram:</strong> <a href="https://instagram.com/prasadmushroom" target="_blank">@prasadmushroom</a></p>
+    </div>
   </section>
 
   <footer>
-    <p>© 2025 Prasad. Built with ❤️ in Buldana.</p>
+    &copy; 2025 Prasad Milk. सर्व हक्क राखीव.
   </footer>
-
-  <!-- Animate On Scroll -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-
 </body>
 </html>
